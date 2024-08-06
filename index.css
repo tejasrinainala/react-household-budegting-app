@@ -1,2 +1,43 @@
-
+html,body{
+  background-color: #98FF98;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.whole{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header-img{
+    height:304px;
+    width:301px;
+    margin-top: 30px;
+    margin-left: 530px;
+    margin-right: 530px;
+}
+.app-name
+{
+  text-align: center;
+  font-size:larger;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.ask-user{
+  text-align: center;
+  font-size:x-large;
+  font-weight:lighter;
+  color: black;
+}
+button{
+  padding : 10px 15px 10px 15px;
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 120px;
+  height:50px;
+  font-weight: bold;
+  font-size: large;
+}
 
