@@ -6,7 +6,7 @@ html,body{
   font-family: Arial, sans-serif;
   display: flex;
 }
-.whole{
+.whole,.root{
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -25,7 +25,7 @@ html,body{
   font-weight: bolder;
   text-decoration: underline;
 }
-.ask-user{
+.ask-user,.root{
   text-align: center;
   font-size:x-large;
   font-weight:lighter;
