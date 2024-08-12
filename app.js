@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
-import ReactDOM from "react-DOM";
 import './index.css';
 
 function App() {
     const [showLogin, setShowLogin] = useState(false);
+    const[showSignUp,setShowSignUp] = useState(false);
 
     function login() {
         setShowLogin(true);
+    }
+    function signUp()
+    {
+        setShowSignUp(true);
     }
 
     return (
         <div className="ask-user">
             {showLogin ? (
-                <div>
-                    <input type="text" placeholder='Enter username/number' />
+                <div className='login-input'>
+                    <input type="text" placeholder='Enter username' />
                     <input type="password" placeholder='Enter password' />
                 </div>
             ) : (
@@ -21,13 +25,30 @@ function App() {
                     <p>Already a User?</p>
                     <button onClick={login}>Login</button>
                     <p>New User?</p>
-                    <button>Sign Up!</button>
+                    <button onClick={signUp}>Sign Up!</button>
+                </>
+            )}
+            {showSignUp ? (
+                <div className='signup-input'>
+                    <input type="text" placeholder="fullname"/>
+                    <input type="text" placeholder='email address'/>
+                </div>
+
+            ):(
+                <>
+                    <p>Already a User?</p>
+                    <button onClick={login}>Login</button>
+                    <p>New User?</p>
+                    <button onClick={signUp}>Sign Up!</button>
                 </>
             )}
         </div>
+    
+
     );
 }
 
 export default App;
+
 
 
