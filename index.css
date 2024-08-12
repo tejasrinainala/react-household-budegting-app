@@ -1,43 +1,63 @@
-html,body{
+html, body, #root {
   background-color: #98FF98;
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.whole,.root{
+
+.whole {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.header-img{
-    height:304px;
-    width:301px;
-    margin-top: 30px;
-    margin-left: 530px;
-    margin-right: 530px;
+
+.header-img {
+  height: 304px;
+  width: 301px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-.app-name
-{
+
+.app-name {
   text-align: center;
-  font-size:larger;
+  font-size: larger;
   font-weight: bolder;
   text-decoration: underline;
 }
-.ask-user,.root{
+
+.ask-user {
   text-align: center;
-  font-size:x-large;
-  font-weight:lighter;
+  font-size: x-large;
+  font-weight: 200; /* Adjust the weight */
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
-button{
-  padding : 10px 15px 10px 15px;
+
+
+button {
+  padding: 10px 15px;
   border-radius: 15px;
   border: 1px solid black;
   width: 120px;
-  height:50px;
+  height: 50px;
   font-weight: bold;
   font-size: large;
+  margin-top: 10px;
 }
-
+.login-input{
+  display : flex;
+  flex-direction : column;
+  width : auto;
+  height:50px;
+}
