@@ -20,21 +20,12 @@ function App() {
                     <input type="text" placeholder='Enter username' />
                     <input type="password" placeholder='Enter password' />
                 </div>
-            ) : (
-                <>
-                    <p>Already a User?</p>
-                    <button onClick={login}>Login</button>
-                    <p>New User?</p>
-                    <button onClick={signUp}>Sign Up!</button>
-                </>
-            )}
-            {showSignUp ? (
+            ) : showSignUp ? (
                 <div className='signup-input'>
-                    <input type="text" placeholder="fullname"/>
-                    <input type="text" placeholder='email address'/>
+                    <input type="text" placeholder="Full Name" />
+                    <input type="text" placeholder='Email Address' />
                 </div>
-
-            ):(
+            ) : (
                 <>
                     <p>Already a User?</p>
                     <button onClick={login}>Login</button>
@@ -44,7 +35,6 @@ function App() {
             )}
         </div>
     
-
     );
 }
 
