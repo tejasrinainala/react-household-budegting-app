@@ -55,9 +55,18 @@ button {
   font-size: large;
   margin-top: 10px;
 }
-.login-input{
-  display : flex;
-  flex-direction : column;
-  width : auto;
-  height:50px;
+.login-input,form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+label{
+  font-weight : 300px;
+  font-size:medium;
+  opacity: 0.8;
+}
+input {
+  width:100px;
+  height:fit-content;
 }
