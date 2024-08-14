@@ -17,7 +17,9 @@ function App() {
         <div className="ask-user">
             {showLogin ? (
                 <div className='login-input'>
+                    <label>User name</label>
                     <input type="text" placeholder='Enter username' />
+                    <label>Password</label>
                     <input type="password" placeholder='Enter password' />
                 </div>
             ) : showSignUp ? (
