@@ -22,8 +22,16 @@ function App() {
                 </div>
             ) : showSignUp ? (
                 <div className='signup-input'>
-                    <input type="text" placeholder="Full Name" />
-                    <input type="text" placeholder='Email Address' />
+                    <form action="signup" method="POST">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter name"/>
+                        <label>Email</label>
+                        <input type="email" placeholder='Email Address' />
+                        <label>Create Password</label>
+                        <input type="password" placeholder='enter password'/>
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder='re-enter password'/>
+                    </form>
                 </div>
             ) : (
                 <>
