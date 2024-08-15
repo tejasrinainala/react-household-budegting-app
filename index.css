@@ -1,4 +1,4 @@
-html, body, #root {
+uhtml, body, #root {
   background-color: #98FF98;
   margin: 0;
   padding: 0;
@@ -65,8 +65,4 @@ label{
   font-weight : 300px;
   font-size:medium;
   opacity: 0.8;
-}
-input {
-  width:100px;
-  height:fit-content;
 }
