@@ -12,7 +12,16 @@ function App() {
     {
         setShowSignUp(true);
     }
-
+    function save(e) {
+        e.preventDefault();  // Prevent form submission
+        var pw1 = document.querySelector(".pswd1").value;
+        var pw2 = document.querySelector(".pswd2").value;
+        if (pw1 === pw2) {
+            alert("Hurray! You successfully signed up.");
+        } else {
+            alert("Password doesn't match.");
+        }
+    }
     return (
         <div className="ask-user">
             {showLogin ? (
