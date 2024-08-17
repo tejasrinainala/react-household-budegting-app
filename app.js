@@ -30,6 +30,7 @@ function App() {
                     <input type="text" placeholder='Enter username' />
                     <label>Password</label>
                     <input type="password" placeholder='Enter password' />
+                    <button>Login</button>
                 </div>
             ) : showSignUp ? (
                 <div className='signup-input'>
